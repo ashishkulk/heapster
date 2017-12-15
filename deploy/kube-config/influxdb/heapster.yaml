@@ -8,7 +8,7 @@ apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
   name: heapster
-  namespace: kube-system
+  namespace: monitoring
 spec:
   replicas: 1
   template:
@@ -37,7 +37,7 @@ metadata:
     kubernetes.io/cluster-service: 'true'
     kubernetes.io/name: Heapster
   name: heapster
-  namespace: kube-system
+  namespace: monitoring
 spec:
   ports:
   - port: 80
